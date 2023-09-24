@@ -214,7 +214,7 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
 <div id="banner" class="banner" parallax=true
      style="background: url('/img/yjsp.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
@@ -287,29 +287,31 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
       
 
 <div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
+	<div class="row nomargin-x">
+		<div class="side-col d-none d-lg-block col-lg-2">
+			
 
-    </div>
+		</div>
 
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <h1 id="seo-header">test</h1>
-            
-            
-              <div class="markdown-body">
-                
-                <p><img src="/img/yjsp.jpg" srcset="/img/loading.gif" lazyload alt="田所浩二"></p>
+		<div class="col-lg-8 nopadding-x-md">
+			<div class="container nopadding-x-md" id="board-ctn">
+				<div id="board">
+					<article class="post-content mx-auto">
+						<h1 id="seo-header">
+							test
+						</h1>
+						
+						
+						<div class="markdown-body">
+							
+							<p><img src="/img/yjsp.jpg" srcset="/img/loading.gif" lazyload alt="田所浩二"></p>
 
-                
-              </div>
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
+							
+						</div>
+						
+						<hr />
+						<div>
+							<div class="post-metas my-3">
   
     <div class="post-meta mr-3 d-flex align-items-center">
       <i class="iconfont icon-category"></i>
@@ -343,7 +345,7 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
 </div>
 
 
-              
+							
   
 
   <div class="license-box my-3">
@@ -388,41 +390,53 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
 
 
 
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2023/08/30/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
+							
+							<div class="post-prevnext my-3">
+								<article class="post-prev col-6">
+									
+									
+								</article>
+								<article class="post-next col-6">
+									
+									
+									<a href="/2023/08/30/hello-world/" title="Hello World">
+										<span class="hidden-mobile">
+											Hello World
+										</span>
+										<span class="visible-mobile">
+											下一篇
+										</span>
+										<i class="iconfont icon-arrowright"></i>
+									</a>
+									
+								</article>
+							</div>
+							
+						</div>
 
-            <script src="https://utteranc.es/client.js"
-        	repo="onaniisyoujo/ona-comments"
-        	issue-term="pathname"
-        	theme="github-light"
-        	crossorigin="anonymous"
-        	async>
-	    </script>
-	   
-          </article>
-        </div>
-      </div>
-    </div>
+						<div id="vcomments"></div>
+						<script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+						<script>
+							new Valine({
+							    el: '#vcomments',
+							    appId: 'MMH0HmN9WNMhxXgccAiwt5qA-MdYXbMMI',
+							    appKey: 'meCb4Dp0hSEmax5CgVfNrZST',
+							    placeholder: '请输入评论内容...',
+							    notify: true,  // 是否接收评论通知邮件
+							    verify: true,  // 是否启用评论验证码
+							    avatar: 'mm',  // 评论头像类型，可选值：'' (无头像), 'mp', 'identicon', 'monsterid', 'wavatar', 'retro', 'robohash', 'mm'
+							    pageSize: 10,  // 每页显示的评论数量
+							  });
+						</script>
 
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
+
+					</article>
+				</div>
+			</div>
+		</div>
+
+		<div class="side-col d-none d-lg-block col-lg-2">
+			
   <aside class="sidebar" style="margin-left: -1rem">
     <div id="toc">
   <p class="toc-header">
@@ -437,8 +451,8 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
   </aside>
 
 
-    </div>
-  </div>
+		</div>
+	</div>
 </div>
 
 
@@ -462,7 +476,6 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
 
 
   
-
 
 
 
