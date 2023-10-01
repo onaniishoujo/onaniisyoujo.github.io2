@@ -20,9 +20,8 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
 
 <head>
   <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/myicon.jpg">
+  <link rel="icon" href="/img/myicon.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -53,12 +52,6 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
 
 
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -84,6 +77,7 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
   
 <link rel="stylesheet" href="/css/cloudedGlass.css">
 <link rel="stylesheet" href="/css/body.css">
+<link rel="stylesheet" href="/css/font.css">
 
 
 
@@ -112,7 +106,7 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
   <header>
     
 
-<div class="header-inner" style="height: 70vh;">
+<div class="header-inner" style="height: 60vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -286,199 +280,43 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
     
       
 
-<div class="container-fluid nopadding-x">
-	<div class="row nomargin-x">
-		<div class="side-col d-none d-lg-block col-lg-2">
-			
+<article class="page-content">
+  <p><img src="/img/yjsp.jpg" srcset="/img/loading.gif" lazyload alt="田所浩二"></p>
 
-		</div>
 
-		<div class="col-lg-8 nopadding-x-md">
-			<div class="container nopadding-x-md" id="board-ctn">
-				<div id="board">
-					<article class="post-content mx-auto">
-						<h1 id="seo-header">
-							test
-						</h1>
-						
-						
-						<div class="markdown-body">
-							
-							<p><img src="/img/yjsp.jpg" srcset="/img/loading.gif" lazyload alt="田所浩二"></p>
-
-							
-						</div>
-						
-						<hr />
-						<div>
-							<div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
+  
+  
+    <article id="comments" lazyload>
       
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/test/" class="category-chain-item">test</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/%E5%8E%9F%E5%88%9B/" class="print-no-link">#原创</a>
-      
-    </div>
-  
-</div>
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"MMH0HmN9WNMhxXgccAiwt5qA-MdYXbMMI","appKey":"meCb4Dp0hSEmax5CgVfNrZST","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false,"enable":true},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
 
 
-							
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>test</div>
-      <div>https://onaniisyoujo.github.io/2023/08/30/test/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>オナニー少女</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2023年8月30日</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
-
-							
-							<div class="post-prevnext my-3">
-								<article class="post-prev col-6">
-									
-									
-								</article>
-								<article class="post-next col-6">
-									
-									
-									<a href="/2023/08/30/hello-world/" title="Hello World">
-										<span class="hidden-mobile">
-											Hello World
-										</span>
-										<span class="visible-mobile">
-											下一篇
-										</span>
-										<i class="iconfont icon-arrowright"></i>
-									</a>
-									
-								</article>
-							</div>
-							
-						</div>
-
-						<div id="vcomments"></div>
-						<script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
-						<script>
-							new Valine({
-							    el: '#vcomments',
-							    appId: 'MMH0HmN9WNMhxXgccAiwt5qA-MdYXbMMI',
-							    appKey: 'meCb4Dp0hSEmax5CgVfNrZST',
-							    placeholder: '请输入评论内容...',
-							    notify: true,  // 是否接收评论通知邮件
-							    verify: true,  // 是否启用评论验证码
-							    avatar: 'mm',  // 评论头像类型，可选值：'' (无头像), 'mp', 'identicon', 'monsterid', 'wavatar', 'retro', 'robohash', 'mm'
-							    pageSize: 10,  // 每页显示的评论数量
-							  });
-						</script>
-
-
-					</article>
-				</div>
-			</div>
-		</div>
-
-		<div class="side-col d-none d-lg-block col-lg-2">
-			
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-		</div>
-	</div>
-</div>
-
-
-
-
-
+    </article>
   
 
 
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
+</article>
 
 
 
@@ -599,99 +437,6 @@ color="255,255,255" opacity='0.8' zIndex="-1" count="150" src="/js/custom.js">
 
 
 
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('anchors' in window) {
-        anchors.removeAll();
-        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-        var res = [];
-        for (var item of el) {
-          res.push('.markdown-body > ' + item.trim());
-        }
-        if (CONFIG.anchorjs.placement === 'left') {
-          anchors.options.class = 'anchorjs-link-left';
-        }
-        anchors.add(res.join(', '));
-      }
-    });
-  });
-</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'CheeseFont';
+  src: url('/font/wendao_cheese_font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+body {
+    font-family: 'CheeseFont'; 
+    font-size: 16px;
+}
+*/
