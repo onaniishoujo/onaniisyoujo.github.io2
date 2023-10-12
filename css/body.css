@@ -1,6 +1,6 @@
 /* 设置背景图片 */
 body {
-  background: url(/img/body.jpg);
+  background: url(/img/body4.jpg);
   background-attachment: fixed;
   background-size: cover;  
 }
