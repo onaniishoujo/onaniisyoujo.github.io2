@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Hexo-Fluid随机切换背景图片</title>
+    <link href="/2023/10/14/Hexo-Fluid%E9%9A%8F%E6%9C%BA%E5%88%87%E6%8D%A2%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/"/>
+    <url>/2023/10/14/Hexo-Fluid%E9%9A%8F%E6%9C%BA%E5%88%87%E6%8D%A2%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
+    
+    <content type="html"><![CDATA[<ul><li>使用自定义js实现<br>背景图片的名称为<code>body0.jpg~body9.jpg</code>，位于<code>themes/fluid/source/img</code>文件夹<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> randomIndex = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * <span class="hljs-number">10</span>);<br><br><span class="hljs-comment">// 构建相对路径的图片文件名</span><br><span class="hljs-keyword">var</span> imageName = <span class="hljs-string">&#x27;/img/body&#x27;</span> + randomIndex + <span class="hljs-string">&#x27;.jpg&#x27;</span>;<br><br><span class="hljs-comment">// 直接设置body元素的背景图片和背景大小</span><br><span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>.<span class="hljs-property">backgroundImage</span> = <span class="hljs-string">&#x27;url(&#x27;</span> + imageName + <span class="hljs-string">&#x27;)&#x27;</span>;<br><span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>.<span class="hljs-property">backgroundSize</span> = <span class="hljs-string">&#x27;cover&#x27;</span>;<br></code></pre></td></tr></table></figure></li><li>在点击链接时切换背景<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;DOMContentLoaded&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;changeBackgroundLink&#x27;</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) &#123;<br>    event.<span class="hljs-title function_">preventDefault</span>(); <span class="hljs-comment">// 阻止链接的默认行为</span><br><br>    <span class="hljs-comment">// 随机生成0到9之间的整数</span><br>    <span class="hljs-keyword">var</span> randomIndex = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * <span class="hljs-number">10</span>);<br><br>    <span class="hljs-comment">// 构建相对路径的图片文件名</span><br>    <span class="hljs-keyword">var</span> imageName = <span class="hljs-string">&#x27;/img/body&#x27;</span> + randomIndex + <span class="hljs-string">&#x27;.jpg&#x27;</span>;<br><br>    <span class="hljs-comment">// 直接设置body元素的背景图片</span><br>    <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>.<span class="hljs-property">backgroundImage</span> = <span class="hljs-string">&#x27;url(&#x27;</span> + imageName + <span class="hljs-string">&#x27;)&#x27;</span>;<br>  &#125;);<br>&#125;);<br></code></pre></td></tr></table></figure>链接应为<code>&lt;a href=&quot;#&quot;id=&quot;changeBackgroundLink&quot;&gt;</code></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>资源</category>
+      
+      <category>hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+      <tag>技术</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>谁能帮我找个女朋友</title>
     <link href="/2023/10/14/%E8%B0%81%E8%83%BD%E5%B8%AE%E6%88%91%E6%89%BE%E4%B8%AA%E5%A5%B3%E6%9C%8B%E5%8F%8B/"/>
     <url>/2023/10/14/%E8%B0%81%E8%83%BD%E5%B8%AE%E6%88%91%E6%89%BE%E4%B8%AA%E5%A5%B3%E6%9C%8B%E5%8F%8B/</url>
@@ -93,7 +122,7 @@
     <link href="/2023/10/05/%E9%85%8D%E7%BD%AEHexo-Fluid%E5%8F%8AValine%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <url>/2023/10/05/%E9%85%8D%E7%BD%AEHexo-Fluid%E5%8F%8AValine%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     
-    <content type="html"><![CDATA[<p>一些小问题</p><h2 id="关于Hexo-Fluid的评论"><a href="#关于Hexo-Fluid的评论" class="headerlink" title="关于Hexo Fluid的评论"></a>关于Hexo Fluid的评论</h2><p>因为出了一点Bug，本站的评论通过修改<code>Blog/themes/fluid/layout/post.ejs</code>实现。<br>将<code>post.ejs</code>中关于<code>comments</code>的代码(具体是什么我忘了…)替换为你使用的评论系统提供的html代码(以Utterance为例):</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://utteranc.es/client.js&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">repo</span>=<span class="hljs-string">&quot;用户名/仓库地址&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">issue-term</span>=<span class="hljs-string">&quot;pathname&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;github-light&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">async</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure><h2 id="关于Valine"><a href="#关于Valine" class="headerlink" title="关于Valine"></a>关于Valine</h2><p>测试时发现LeanCloud提供的域名会屏蔽中国大陆的访问…<br>绑定自己的域名后就能正常访问…  </p><p>在LeanCloud的<code>设置-域名绑定</code>选项绑定自己的子域名，然后在子域名的DNS上设置<code>CNAME</code>记录，解析到LeanCloud提供的域名，之后配置Valine时,使用绑定的子域名  </p><p><del>不想打字了</del></p>]]></content>
+    <content type="html"><![CDATA[<p>一些小问题</p><h2 id="关于Hexo-Fluid的评论"><a href="#关于Hexo-Fluid的评论" class="headerlink" title="关于Hexo Fluid的评论"></a>关于Hexo Fluid的评论</h2><p>因为出了一点Bug，本站的评论通过修改<code>Blog/themes/fluid/layout/post.ejs</code>实现。<br>将<code>post.ejs</code>中的<code>&lt;%- inject_point(&#39;postComments&#39;) %&gt;</code>替换为 你使用的评论系统 提供的html代码<br>以Utterance为例:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://utteranc.es/client.js&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">repo</span>=<span class="hljs-string">&quot;用户名/仓库地址&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">issue-term</span>=<span class="hljs-string">&quot;pathname&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;github-light&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">async</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure><h2 id="关于网站图标"><a href="#关于网站图标" class="headerlink" title="关于网站图标"></a>关于网站图标</h2><p>在<code>_config.fluid.yml</code>没反应，手动将网页图标重命名为<code>favicon.ico</code>，复制到<code>public</code>文件夹下</p><h2 id="关于Valine"><a href="#关于Valine" class="headerlink" title="关于Valine"></a>关于Valine</h2><p>测试时发现LeanCloud提供的域名会屏蔽中国大陆的访问…<br>绑定自己的域名后就能正常访问…  </p><p>在LeanCloud的<code>设置-域名绑定</code>选项绑定自己的子域名，然后在子域名的DNS上设置<code>CNAME</code>记录，解析到LeanCloud提供的域名，之后配置Valine时,使用绑定的子域名  </p><p><del>不想打字了</del></p>]]></content>
     
     
     <categories>
@@ -172,6 +201,19 @@
       <tag>女生</tag>
       
     </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>建站纪念</title>
+    <link href="/2023/08/30/%E5%BB%BA%E7%AB%99%E7%BA%AA%E5%BF%B5/"/>
+    <url>/2023/08/30/%E5%BB%BA%E7%AB%99%E7%BA%AA%E5%BF%B5/</url>
+    
+    <content type="html"><![CDATA[<h1 id="初音ミク16岁生日快乐！！！"><a href="#初音ミク16岁生日快乐！！！" class="headerlink" title="初音ミク16岁生日快乐！！！"></a>初音ミク16岁生日快乐！！！</h1><h1 id="同时纪念少女的小站正式建成"><a href="#同时纪念少女的小站正式建成" class="headerlink" title="同时纪念少女的小站正式建成"></a>同时纪念少女的小站正式建成</h1>]]></content>
+    
+    
     
   </entry>
   
