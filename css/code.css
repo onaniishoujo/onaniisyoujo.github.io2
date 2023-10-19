@@ -1,6 +1,6 @@
 .markdown-body code {
     tab-size: 4;
-    background-color: rgb(251 253 83 / 50%);
+    background-color: rgb(255 255 0 / 50%);
     transition: background-color 0.2s ease-in-out;
     font-family: "CheeseFont", sans-serif;
 }

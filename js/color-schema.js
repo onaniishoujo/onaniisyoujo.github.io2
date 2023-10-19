@@ -160,6 +160,7 @@
           'data',
           invertColorSchemaObj[schema]
         );
+		
       } else {
         // 如果图标不存在则说明图标还没加载出来，等到页面全部加载再尝试切换
         Fluid.utils.waitElementLoaded(colorToggleIconSelector, function() {
@@ -217,6 +218,7 @@
   }
 
   function setApplications(schema) {
+
     // 设置 remark42 评论主题
     if (window.REMARK42) {
       window.REMARK42.changeTheme(schema);

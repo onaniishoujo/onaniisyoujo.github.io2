@@ -1,20 +1,12 @@
 
 
 <!DOCTYPE html>
-<!-- 自定义内容 开始 -->
 
-<!-- 鼠标烟花 -->
-<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-<script type="text/javascript" src="/js/fireworks.js"></script>
-
-<!-- 自定义内容 结束 -->
-
-<html lang="zh-CN" >
+<html lang="zh-CN" data-default-color-scheme=light>
 
 
 
-<head>
+<head><!-- hexo injector head_begin start --><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 6; pointer-events: none;" ></canvas><script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script><script type="text/javascript" src="/js/firework.js"></script><link id="custom-css" rel="stylesheet" type="text/css" href="/css/divback.css"><!-- hexo injector head_begin end -->
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/myicon.jpg">
   <link rel="icon" href="/img/myicon.jpg">
@@ -60,6 +52,8 @@
 
   <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
 
 
 
@@ -67,7 +61,6 @@
 <link rel="stylesheet" href="/css/body.css">
 <link rel="stylesheet" href="/css/font.css">
 <link rel="stylesheet" href="/css/copy.css">
-<link rel="stylesheet" href="/css/divback.css">
 <link rel="stylesheet" href="/css/code.css">
 
 
@@ -182,6 +175,12 @@
           </li>
           
         
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle" onclick="toggleCSS()">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
         
       </ul>
     </div>
@@ -423,11 +422,11 @@
 
 
   
-<script src="/js/fireworks.js"></script>
 <script src="/js/copy.js"></script>
 <script src="/js/linkimg.js"></script>
 <script src="/js/back.js"></script>
 <script src="/js/screenshot.js"></script>
+<script src="/js/toggle.js"></script>
 
 
 
