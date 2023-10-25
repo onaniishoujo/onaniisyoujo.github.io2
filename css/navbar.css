@@ -1,0 +1,4 @@
+#navbar {
+  background-color: rgba(0, 0, 0, 0); /* 初始状态为透明 */
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
