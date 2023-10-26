@@ -1,5 +1,6 @@
 /* 设置背景图片 */
 body {
+  background-image: url("https://t.mwm.moe/ycy/");
   background-attachment: fixed;
   background-size: cover;  
 }
