@@ -1,8 +1,13 @@
 @font-face {
   font-family: 'CheeseFont';
-  src: url('https://cdn.jsdelivr.net/gh/onaniisyoujo/onaniisyoujo.github.io/font/wendao_cheese_font.woff2') format('woff2');
+  src: url('https://res.cloudinary.com/dsfrgrq3w/raw/upload/v1698574954/wendao_cheese_font_kvi3ff.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+}
+
+#vcomments {
+  font-family: CheeseFont;
+  font-size: 21px;
 }
 
 /*
@@ -11,3 +16,5 @@ body {
     font-size: 16px;
 }
 */
+
+/* src: url('https://cdn.jsdelivr.net/gh/onaniisyoujo/onaniisyoujo.github.io/font/wendao_cheese_font.woff2') format('woff2'); */
