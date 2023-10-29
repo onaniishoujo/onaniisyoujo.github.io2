@@ -1,9 +1,10 @@
 @font-face {
   font-family: 'CheeseFont';
-  src: url('https://cdn.jsdelivr.net/gh/onaniisyoujo/onaniisyoujo.github.io/font/wendao_cheese_font.ttf') format('truetype');
+  src: url('src: url('https://cdn.jsdelivr.net/gh/onaniisyoujo/onaniisyoujo.github.io/font/wendao_cheese_font.woff2') format('truetype');') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 /*
 body {
     font-family: 'CheeseFont'; 
