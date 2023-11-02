@@ -17,15 +17,15 @@
   <meta name="author" content="オナニー少女">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一些小问题 关于Hexo Fluid的评论因为出了一点Bug，本站的评论通过修改Blog&#x2F;themes&#x2F;fluid&#x2F;layout&#x2F;post.ejs实现。将post.ejs中的&lt;%- inject_point(&#39;postComments&#39;) %&gt;替换为 你使用的评论系统 提供的html代码以Utterance为例: 1234567&lt;script src&#x3D;&quot;">
+    <meta name="description" content="自定义css和js可以不在主题配置中引入Hexo注入器添加以下内容 1hexo.extend.injector.register(&amp;#x27;head_begin&amp;#x27;, &amp;#x27;&lt;div id&#x3D;&quot;overlay&quot;&gt;&lt;img src&#x3D;&quot;加载图片路径(我用的头像)&quot; alt&#x3D;&quot;My Icon&quot;&gt;&lt;di">
 <meta property="og:type" content="article">
-<meta property="og:title" content="配置Hexo-Fluid及Valine时遇到的问题">
-<meta property="og:url" content="https://onaniisyoujo.github.io/2023/10/05/%E9%85%8D%E7%BD%AEHexo-Fluid%E5%8F%8AValine%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:title" content="Hexo Fluid添加加载动画">
+<meta property="og:url" content="https://onaniisyoujo.github.io/2023/11/02/Hexo-Fluid%E6%B7%BB%E5%8A%A0%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB/index.html">
 <meta property="og:site_name" content="♡Miku♡少女的Blog">
-<meta property="og:description" content="一些小问题 关于Hexo Fluid的评论因为出了一点Bug，本站的评论通过修改Blog&#x2F;themes&#x2F;fluid&#x2F;layout&#x2F;post.ejs实现。将post.ejs中的&lt;%- inject_point(&#39;postComments&#39;) %&gt;替换为 你使用的评论系统 提供的html代码以Utterance为例: 1234567&lt;script src&#x3D;&quot;">
+<meta property="og:description" content="自定义css和js可以不在主题配置中引入Hexo注入器添加以下内容 1hexo.extend.injector.register(&amp;#x27;head_begin&amp;#x27;, &amp;#x27;&lt;div id&#x3D;&quot;overlay&quot;&gt;&lt;img src&#x3D;&quot;加载图片路径(我用的头像)&quot; alt&#x3D;&quot;My Icon&quot;&gt;&lt;di">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-10-05T13:34:52.000Z">
-<meta property="article:modified_time" content="2023-10-14T14:42:12.561Z">
+<meta property="article:published_time" content="2023-11-02T14:23:50.000Z">
+<meta property="article:modified_time" content="2023-11-02T14:30:59.612Z">
 <meta property="article:author" content="オナニー少女">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="fluid">
@@ -36,7 +36,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>配置Hexo-Fluid及Valine时遇到的问题 - ♡Miku♡少女的Blog</title>
+  <title>Hexo Fluid添加加载动画 - ♡Miku♡少女的Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="配置Hexo-Fluid及Valine时遇到的问题"></span>
+            <span id="subtitle" data-typed-text="Hexo Fluid添加加载动画"></span>
           
         </div>
 
@@ -224,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-05 21:34" pubdate>
-          2023年10月5日 晚上
+        <time datetime="2023-11-02 22:23" pubdate>
+          2023年11月2日 晚上
         </time>
       </span>
     
@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          580 字
+          1.8k 字
         
       </span>
     
@@ -247,7 +247,7 @@
         
         
         
-          5 分钟
+          16 分钟
         
       </span>
     
@@ -292,12 +292,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">配置Hexo-Fluid及Valine时遇到的问题</h1>
+            <h1 id="seo-header">Hexo Fluid添加加载动画</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年10月14日 晚上
+                    本文最后更新于：2023年11月2日 晚上
                   
                 
               </p>
@@ -305,14 +305,12 @@
             
               <div class="markdown-body">
                 
-                <p>一些小问题</p>
-<h2 id="关于Hexo-Fluid的评论"><a href="#关于Hexo-Fluid的评论" class="headerlink" title="关于Hexo Fluid的评论"></a>关于Hexo Fluid的评论</h2><p>因为出了一点Bug，本站的评论通过修改<code>Blog/themes/fluid/layout/post.ejs</code>实现。<br>将<code>post.ejs</code>中的<code>&lt;%- inject_point(&#39;postComments&#39;) %&gt;</code>替换为 你使用的评论系统 提供的html代码<br>以Utterance为例:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://utteranc.es/client.js&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">repo</span>=<span class="hljs-string">&quot;用户名/仓库地址&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">issue-term</span>=<span class="hljs-string">&quot;pathname&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;github-light&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">async</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="关于网站图标"><a href="#关于网站图标" class="headerlink" title="关于网站图标"></a>关于网站图标</h2><p>在<code>_config.fluid.yml</code>没反应，手动将网页图标重命名为<code>favicon.ico</code>，复制到<code>public</code>文件夹下</p>
-<h2 id="关于Valine"><a href="#关于Valine" class="headerlink" title="关于Valine"></a>关于Valine</h2><p>测试时发现LeanCloud提供的域名会屏蔽中国大陆的访问…<br>绑定自己的域名后就能正常访问…  </p>
-<p>在LeanCloud的<code>设置-域名绑定</code>选项绑定自己的子域名，然后在子域名的DNS上设置<code>CNAME</code>记录，解析到LeanCloud提供的域名，之后配置Valine时,使用绑定的子域名  </p>
-<p><del>不想打字了</del></p>
+                <p><strong>自定义css和js可以不在主题配置中引入</strong><br><a target="_blank" rel="noopener" href="https://fluid-dev.com/posts/hexo-injector/">Hexo注入器</a>添加以下内容</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">hexo.extend.injector.register(&#x27;head_begin&#x27;, &#x27;&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">&quot;overlay&quot;</span>&gt;&lt;img src=<span class="hljs-string">&quot;加载图片路径(我用的头像)&quot;</span> alt=<span class="hljs-string">&quot;My Icon&quot;</span>&gt;&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">&quot;loading&quot;</span>&gt;正在加载喵&lt;span <span class="hljs-built_in">id</span>=<span class="hljs-string">&quot;wave&quot;</span>&gt;&lt;/span&gt;&lt;/<span class="hljs-keyword">div</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;&#x27;, &#x27;default&#x27;);<br></code></pre></td></tr></table></figure>
+<p>自定义css:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-id">#overlay</span> &#123;<br>     <span class="hljs-attribute">position</span>: fixed;<br>     <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;<br>     <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;<br>     <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;<br>     <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;<br>     <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.5</span>);<br>     backdrop-<span class="hljs-attribute">filter</span>: <span class="hljs-built_in">blur</span>(<span class="hljs-number">10px</span>);<br>     <span class="hljs-attribute">display</span>: flex;<br>     <span class="hljs-attribute">justify-content</span>: center;<br>     <span class="hljs-attribute">align-items</span>: center;<br>     <span class="hljs-attribute">flex-direction</span>: column;<br>     <span class="hljs-attribute">z-index</span>: <span class="hljs-number">9999</span>;<br>     <span class="hljs-attribute">transition</span>: opacity <span class="hljs-number">1s</span> ease-out;<br>   &#125;<br><br>   <span class="hljs-selector-id">#overlay</span> <span class="hljs-selector-tag">img</span> &#123;<br>     <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;<br>     <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;<br>     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;<br>     <span class="hljs-attribute">max-height</span>: <span class="hljs-number">100%</span>;<br>     <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;<br>     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;<br>   &#125;<br><br>   <span class="hljs-selector-id">#loading</span> &#123;<br>     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;<br>     <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;<br>     <span class="hljs-attribute">animation</span>: loadingAnimation <span class="hljs-number">1s</span> infinite; <span class="hljs-comment">/* 添加动画效果 */</span><br>   &#125;<br><br>   <span class="hljs-keyword">@keyframes</span> loadingAnimation &#123;<br>     <span class="hljs-number">0%</span> &#123; <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;正在加载喵~&quot;</span>; &#125;<br>     <span class="hljs-number">33%</span> &#123; <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;正在加载喵~~&quot;</span>; &#125;<br>     <span class="hljs-number">66%</span> &#123; <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;正在加载喵~~~&quot;</span>; &#125;<br>     <span class="hljs-number">100%</span> &#123; <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;正在加载喵~&quot;</span>; &#125;<br>   &#125;<br></code></pre></td></tr></table></figure>
+<p>自定义js  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> overlay = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;overlay&#x27;</span>);<br><span class="hljs-keyword">var</span> loading = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;loading&#x27;</span>);<br><span class="hljs-keyword">var</span> wave = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;wave&#x27;</span>);<br><br><span class="hljs-keyword">var</span> timer = <span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-title function_">hideOverlay</span>();<br>&#125;, <span class="hljs-number">3000</span>);<br><br><span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;load&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-built_in">clearTimeout</span>(timer); <span class="hljs-comment">// 在页面加载完成后清除定时器</span><br>  <span class="hljs-title function_">hideOverlay</span>();<br>&#125;);<br><br><span class="hljs-keyword">function</span> <span class="hljs-title function_">hideOverlay</span>(<span class="hljs-params"></span>) &#123;<br>  loading.<span class="hljs-property">style</span>.<span class="hljs-property">display</span> = <span class="hljs-string">&#x27;none&#x27;</span>;<br>  overlay.<span class="hljs-property">style</span>.<span class="hljs-property">opacity</span> = <span class="hljs-string">&#x27;0&#x27;</span>;<br>  <span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) &#123;<br>    overlay.<span class="hljs-property">style</span>.<span class="hljs-property">display</span> = <span class="hljs-string">&#x27;none&#x27;</span>;<br>  &#125;, <span class="hljs-number">1000</span>);<br>&#125;<br><br><span class="hljs-built_in">setInterval</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-keyword">var</span> waveContent = wave.<span class="hljs-property">innerHTML</span>;<br>  <span class="hljs-keyword">if</span> (waveContent.<span class="hljs-property">length</span> &lt; <span class="hljs-number">3</span>) &#123;<br>    wave.<span class="hljs-property">innerHTML</span> += <span class="hljs-string">&#x27;~&#x27;</span>;<br>  &#125; <span class="hljs-keyword">else</span> &#123;<br>    wave.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">&#x27;&#x27;</span>;<br>  &#125;<br>&#125;, <span class="hljs-number">500</span>);<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -369,8 +367,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>配置Hexo-Fluid及Valine时遇到的问题</div>
-      <div>https://onaniisyoujo.github.io/2023/10/05/配置Hexo-Fluid及Valine时遇到的问题/</div>
+      <div>Hexo Fluid添加加载动画</div>
+      <div>https://onaniisyoujo.github.io/2023/11/02/Hexo-Fluid添加加载动画/</div>
     </div>
     <div class="license-meta">
       
@@ -382,7 +380,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年10月5日</div>
+          <div>2023年11月2日</div>
         </div>
       
       
@@ -414,18 +412,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/14/%E4%B8%BAHexo-Fluid%E7%9A%84%E6%96%87%E7%AB%A0%E8%AE%BE%E7%BD%AE%E7%BD%91%E6%A0%BC%E8%83%8C%E6%99%AF/" title="为Hexo-Fluid的文章设置网格背景">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">为Hexo-Fluid的文章设置网格背景</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/05/%E9%AD%94%E6%94%B9Hexo-Fluid/" title="魔改hexo fluid">
-                        <span class="hidden-mobile">魔改hexo fluid</span>
+                      <a href="/2023/10/26/%E6%83%B3%E7%A9%BFLolita/" title="想穿Lolita">
+                        <span class="hidden-mobile">想穿Lolita</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
