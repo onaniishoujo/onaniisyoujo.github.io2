@@ -2,7 +2,7 @@
 var image = document.getElementById("banner");
 
 // 计算需要滑动的距离
-var targetDistance = 300;
+var targetDistance = 500;
 
 // 监听滚动事件
 window.addEventListener("scroll", function() {
