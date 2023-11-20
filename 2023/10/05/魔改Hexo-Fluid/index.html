@@ -25,7 +25,7 @@
 <meta property="og:description" content="整理一下本少女在使用hexo fluid时用到的资源及代码博客根目录用Blog&#x2F;代替修改后记得hexo clean&amp;&amp;hexo g&amp;&amp;hexo s如果没有Blog&#x2F;_config.fluid.yml,就用Blog&#x2F;themes&#x2F;fluid&#x2F;_config.yml代替魔改有风险… 添加鼠标烟花 在Blog&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;js新建firewor">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-05T12:23:53.000Z">
-<meta property="article:modified_time" content="2023-10-14T14:00:16.616Z">
+<meta property="article:modified_time" content="2023-11-19T11:39:41.690Z">
 <meta property="article:author" content="オナニー少女">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="fluid">
@@ -78,7 +78,6 @@
 <link rel="stylesheet" href="/css/heimu.css">
 <link rel="stylesheet" href="/css/banner.css">
 <link rel="stylesheet" href="/css/valine.css">
-<link rel="stylesheet" href="/css/cursor.css">
 
 
 
@@ -191,7 +190,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/brewski">
                 <i class="iconfont icon-bookmark"></i>
-                <span>Brewski</span>
+                <span>里站</span>
               </a>
             </li>
           
@@ -260,7 +259,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          8.1k 字
+          8k 字
         
       </span>
     
@@ -271,7 +270,7 @@
         
         
         
-          68 分钟
+          67 分钟
         
       </span>
     
@@ -321,7 +320,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年10月14日 晚上
+                    本文最后更新于：2023年11月19日 晚上
                   
                 
               </p>
@@ -343,8 +342,6 @@
 <li>通过自定义CSS引入字体<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-keyword">@font-face</span> &#123;<br>  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&#x27;FontName&#x27;</span>;  <span class="hljs-comment">/*换成你自己的字体名及路径*/</span><br>  <span class="hljs-attribute">src</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;/font/font.ttf&#x27;</span>) <span class="hljs-built_in">format</span>(<span class="hljs-string">&#x27;truetype&#x27;</span>);<br>  <span class="hljs-attribute">font-weight</span>: normal;<br>  <span class="hljs-attribute">font-style</span>: normal;<br>&#125;<br></code></pre></td></tr></table></figure></li>
 <li>修改<code>Blog/_config.fluid.yml</code><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">font:</span><br>  <span class="hljs-attr">font_size:</span> <span class="hljs-string">18px</span>   <span class="hljs-comment"># 按需要自定义</span><br>  <span class="hljs-attr">font_family:</span> <span class="hljs-string">FontName</span>  <span class="hljs-comment"># 换成你自己的字体名</span><br>  <span class="hljs-attr">letter_spacing:</span> <span class="hljs-number">0.</span><span class="hljs-string">02em</span><br>  <span class="hljs-attr">code_font_size:</span> <span class="hljs-number">85</span><span class="hljs-string">%</span><br></code></pre></td></tr></table></figure></li>
 </ol>
-<h2 id="毛玻璃特效"><a href="#毛玻璃特效" class="headerlink" title="毛玻璃特效"></a>毛玻璃特效</h2><p>参考 <a target="_blank" rel="noopener" href="https://qingshaner.com/Hexo%20Fluid%E4%B8%BB%E9%A2%98%E8%83%8C%E6%99%AF%E5%9B%BA%E5%AE%9A(ES6%E6%94%B9%E5%86%99%E7%89%88)%E4%B8%8E%E6%AF%9B%E7%8E%BB%E7%92%83%E5%BA%95%E9%A1%B5/">清山的博客</a></p>
-<h2 id="右键菜单"><a href="#右键菜单" class="headerlink" title="右键菜单"></a>右键菜单</h2><p>参考 <a target="_blank" rel="noopener" href="https://azpay.cn/post/172.html">小宜技术猫</a><br>将代码添加到<code>Blog\themes\fluid\layout\layout.ejs</code>，注意要放到<code>&lt;/body&gt;</code>标签前<br>也可以使用Hexo注入器</p>
 <h2 id="复制变色"><a href="#复制变色" class="headerlink" title="复制变色"></a>复制变色</h2><ol>
 <li>自定义CSS添加以下内容<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-pseudo">::selection</span> &#123;<br>    <span class="hljs-attribute">color</span>: <span class="hljs-number">#66ccff</span>; <span class="hljs-comment">/* 设置选中文字的颜色 */</span><br>    <span class="hljs-attribute">background</span>: transparent; <span class="hljs-comment">/* 设置选中文字的背景为透明 */</span><br>&#125;<br></code></pre></td></tr></table></figure></li>
 <li>自定义js添加以下内容<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;DOMContentLoaded&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;copy&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) &#123;<br>        <span class="hljs-keyword">const</span> selectedText = <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">getSelection</span>().<span class="hljs-title function_">toString</span>();<br>        <span class="hljs-keyword">if</span> (selectedText) &#123;<br>            <span class="hljs-keyword">const</span> span = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;span&#x27;</span>);<br>            span.<span class="hljs-property">textContent</span> = selectedText;<br>            span.<span class="hljs-property">style</span>.<span class="hljs-property">color</span> = <span class="hljs-string">&#x27;#66ccff&#x27;</span>; <span class="hljs-comment">/* 设置复制的文字颜色 */</span><br>            span.<span class="hljs-property">style</span>.<span class="hljs-property">backgroundColor</span> = <span class="hljs-string">&#x27;transparent&#x27;</span>; <span class="hljs-comment">/* 设置复制的文字背景为透明 */</span><br>            <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(span);<br>            <span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) &#123;<br>                span.<span class="hljs-title function_">remove</span>();<br>            &#125;, <span class="hljs-number">0</span>);<br>        &#125;<br>    &#125;);<br>&#125;);<br></code></pre></td></tr></table></figure>
@@ -768,7 +765,6 @@
 <script src="/js/banner.js"></script>
 <script src="/js/navbar.js"></script>
 <script src="/js/console.js"></script>
-<script src="/js/cursor.js"></script>
 
 
 
@@ -782,5 +778,5 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<!-- hexo injector body_end start --><link rel="stylesheet"href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style type="text/css">a{text-decoration:none}div.usercm{background-repeat:no-repeat;background-position:center center;background-size:cover;background-color:#fff;font-size:13px!important;width:130px;-moz-box-shadow:1px 1px 3px rgba(0,0,0,.3);box-shadow:0px 0px 15px#333;position:absolute;display:none;z-index:10000;opacity:0.9;border-radius:5px}div.usercm ul{list-style-type:none;list-style-position:outside;margin:0px;padding:0px;display:block}div.usercm ul li{margin:0px;padding:0px;line-height:35px}div.usercm ul li a{color:#666;padding:0 15px;display:block}div.usercm ul li a:hover{color:#fff;background:rgba(102,204,255,0.88);border-radius:5px}div.usercm ul li a i{margin-right:10px}a.disabled{color:#c8c8c8!important;cursor:not-allowed}a.disabled:hover{background-color:rgba(255,11,11,0)!important}div.usercm{background:#fff!important}</style><div class="usercm"style="left: 199px; top: 5px; display: none;"><ul><li><a href="https://onaniisyoujo.github.io"><i class="fa fa-home fa-fw"></i><span>首页</span></a></li><li><a href="javascript:void(0);"onclick="getSelect();"><i class="fa fa-file fa-fw"></i><span>复制</span></a></li><li><a href="javascript:history.go(1);"><i class="fa fa-arrow-right fa-fw"></i><span>前进</span></a></li><li><a href="javascript:history.go(-1);"><i class="fa fa-arrow-left fa-fw"></i><span>后退</span></a></li><li><a href="#"id="changeBackgroundLink"><i class="fa fa-file-image-o"></i><span>更改背景</span></a></li><li style="border-bottom:1px solid gray"><a href="javascript:window.location.reload();"><i class="fa fa-refresh fa-fw"></i><span>刷新</span></a></li></ul></div><script type="text/javascript"src="https://cdn.staticfile.org/layer/3.1.1/layer.js"></script><script type="text/javascript">(function(a){a.extend({mouseMoveShow:function(b){var d=0,c=0,h=0,k=0,e=0,f=0;a(window).mousemove(function(g){d=a(window).width();c=a(window).height();h=g.clientX;k=g.clientY;e=g.pageX;f=g.pageY;h+a(b).width()>=d&&(e=e-a(b).width()-5);k+a(b).height()>=c&&(f=f-a(b).height()-5);a("html").on({contextmenu:function(c){3==c.which&&a(b).css({left:e,top:f}).show()},click:function(){a(b).hide()}})})},disabledContextMenu:function(){window.oncontextmenu=function(){return!1}}})})(jQuery);function getSelect(){""==(window.getSelection?window.getSelection():document.selection.createRange().text)?layer.msg("请选择需要复制的内容！"):document.execCommand("Copy")}function baiduSearch(){var a=window.getSelection?window.getSelection():document.selection.createRange().text;""==a?layer.msg("请选择需要百度的内容！"):window.open("https://www.baidu.com/s?wd="+a)}$(function(){for(var a=navigator.userAgent,b="Android;iPhone;SymbianOS;Windows Phone;iPad;iPod".split(";"),d=!0,c=0;c<b.length;c++)if(0<a.indexOf(b[c])){d=!1;break}d&&($.mouseMoveShow(".usercm"),$.disabledContextMenu())});</script><!-- hexo injector body_end end --></body>
+</body>
 </html>

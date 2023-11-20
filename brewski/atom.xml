@@ -23,7 +23,7 @@
     <published>2023-11-18T11:49:40.000Z</published>
     <updated>2023-11-18T11:57:04.808Z</updated>
     
-    <content type="html"><![CDATA[<p>将<code>themes\brewski\layout\partial\comment.pug</code>修改为如下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs pug">.comment<br>  div#vcomments<br>  <br>  script(src=&quot;https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js&quot;)<br>  script.<br>    new Valine(&#123;<br>      // 你的Valine相关配置<br>      el: &#x27;#vcomments&#x27;,<br>    &#125;)<br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>将<code>themes\brewski\layout\partial\comment.pug</code>修改为如下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.comment</span><br><span class="line">  div#vcomments</span><br><span class="line">  </span><br><span class="line">  script(src=&quot;https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js&quot;)</span><br><span class="line">  script.</span><br><span class="line">    new Valine(&#123;</span><br><span class="line">      // 你的Valine相关配置</span><br><span class="line">      el: &#x27;#vcomments&#x27;,</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
@@ -46,7 +46,7 @@
     <published>2023-11-01T11:49:40.000Z</published>
     <updated>2023-11-18T11:54:38.566Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Hello-Brewski"><a href="#Hello-Brewski" class="headerlink" title="Hello,Brewski!"></a>Hello,Brewski!</h2><p>好像用Brewski的不是很多<br>但是好看</p><p>如果不能加载关于页，运行命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page about<br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="Hello-Brewski"><a href="#Hello-Brewski" class="headerlink" title="Hello,Brewski!"></a>Hello,Brewski!</h2><p>好像用Brewski的不是很多<br>但是好看</p><p>如果不能加载关于页，运行命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
