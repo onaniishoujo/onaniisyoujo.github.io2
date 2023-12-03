@@ -6,14 +6,14 @@
 
 
 
-<head><!-- hexo injector head_begin start --><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 6; pointer-events: none;" ></canvas><script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script><script type="text/javascript" src="/js/firework.js"></script><link id="custom-css" rel="stylesheet" type="text/css" href="/css/divback.css"><!-- hexo injector head_begin end -->
+<head><!-- hexo injector head_begin start --><link id="custom-css" rel="stylesheet" type="text/css" href="/css/divback.css"><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 6; pointer-events: none;" ></canvas><script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script><script type="text/javascript" src="/js/firework.js"></script><!-- hexo injector head_begin end -->
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/myicon.jpg">
   <link rel="icon" href="/img/myicon.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <meta name="theme-color" content="#ebebeb">
+  <meta name="theme-color" content="#ebebebcc">
   <meta name="author" content="オナニー少女">
   <meta name="keywords" content="">
   
@@ -25,7 +25,7 @@
 <meta property="og:description" content="一些小问题 关于Hexo Fluid的评论因为出了一点Bug，本站的评论通过修改Blog&#x2F;themes&#x2F;fluid&#x2F;layout&#x2F;post.ejs实现。将post.ejs中的&lt;%- inject_point(&#39;postComments&#39;) %&gt;替换为 你使用的评论系统 提供的html代码以Utterance为例: 1234567&lt;script src&#x3D;&quot;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-05T13:34:52.000Z">
-<meta property="article:modified_time" content="2023-10-14T14:42:12.561Z">
+<meta property="article:modified_time" content="2023-12-01T12:23:58.197Z">
 <meta property="article:author" content="オナニー少女">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="fluid">
@@ -73,9 +73,10 @@
   
 <link rel="stylesheet" href="/css/font.css">
 <link rel="stylesheet" href="/css/copy.css">
-<link rel="stylesheet" href="/css/code.css">
 <link rel="stylesheet" href="/css/heimu.css">
 <link rel="stylesheet" href="/css/valine.css">
+<link rel="stylesheet" href="/css/code.css">
+<link rel="stylesheet" href="/css/scroll.css">
 
 
 
@@ -257,7 +258,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          580 字
+          582 字
         
       </span>
     
@@ -318,7 +319,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年10月14日 晚上
+                    本文最后更新于：2023年12月1日 晚上
                   
                 
               </p>
@@ -330,7 +331,7 @@
 <h2 id="关于Hexo-Fluid的评论"><a href="#关于Hexo-Fluid的评论" class="headerlink" title="关于Hexo Fluid的评论"></a>关于Hexo Fluid的评论</h2><p>因为出了一点Bug，本站的评论通过修改<code>Blog/themes/fluid/layout/post.ejs</code>实现。<br>将<code>post.ejs</code>中的<code>&lt;%- inject_point(&#39;postComments&#39;) %&gt;</code>替换为 你使用的评论系统 提供的html代码<br>以Utterance为例:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://utteranc.es/client.js&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">repo</span>=<span class="hljs-string">&quot;用户名/仓库地址&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">issue-term</span>=<span class="hljs-string">&quot;pathname&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;github-light&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">async</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<h2 id="关于网站图标"><a href="#关于网站图标" class="headerlink" title="关于网站图标"></a>关于网站图标</h2><p>在<code>_config.fluid.yml</code>没反应，手动将网页图标重命名为<code>favicon.ico</code>，复制到<code>public</code>文件夹下</p>
+<h2 id="关于网站图标"><a href="#关于网站图标" class="headerlink" title="关于网站图标"></a>关于网站图标</h2><p>在<code>_config.fluid.yml</code>设置没反应，手动将网页图标重命名为<code>favicon.ico</code>，复制到<code>public</code>文件夹下</p>
 <h2 id="关于Valine"><a href="#关于Valine" class="headerlink" title="关于Valine"></a>关于Valine</h2><p>测试时发现LeanCloud提供的域名会屏蔽中国大陆的访问…<br>绑定自己的域名后就能正常访问…  </p>
 <p>在LeanCloud的<code>设置-域名绑定</code>选项绑定自己的子域名，然后在子域名的DNS上设置<code>CNAME</code>记录，解析到LeanCloud提供的域名，之后配置Valine时,使用绑定的子域名  </p>
 <p><del>不想打字了</del></p>
